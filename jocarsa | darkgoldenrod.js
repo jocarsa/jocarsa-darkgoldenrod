@@ -9,9 +9,11 @@
   async function init() {
     try {
       const response = await fetch('https://jocarsa.github.io/jocarsa-darkgoldenrod/jocarsa-darkgoldenrod-props.json');
+      //const response = await fetch('jocarsa-darkgoldenrod-props.json');
       propsData = await response.json();
       // Once JSON is loaded, build the toolbar
       jocarsaDarkgoldenrodToolbar = createToolbar(propsData);
+      makeToolbarDraggable(jocarsaDarkgoldenrodToolbar);
       setupAccordion(jocarsaDarkgoldenrodToolbar);
       attachGlobalEvents();
       attachWindowEvents();
@@ -24,6 +26,14 @@
   function createToolbar(json) {
     const toolbar = document.createElement('div');
     toolbar.className = 'jocarsa-darkgoldenrod-toolbar';
+    // Ensure the toolbar is absolutely positioned
+    toolbar.style.position = 'absolute';
+    toolbar.style.zIndex = '1000';
+    toolbar.style.display = 'none';
+    toolbar.style.border = '1px solid #ccc';
+    toolbar.style.background = '#fff';
+
+    // The drag handle area will be added separately
 
     // Build accordion sections from the JSON
     json.sections.forEach((section, index) => {
@@ -108,6 +118,48 @@
     return toolbar;
   }
 
+  // ================== MAKE TOOLBAR DRAGGABLE ==================
+  function makeToolbarDraggable(toolbar) {
+    // Create a drag handle area
+    const dragHandle = document.createElement('div');
+    dragHandle.className = 'jocarsa-darkgoldenrod-drag-handle';
+    dragHandle.textContent = 'Drag me';
+    // Style the drag handle (you can customize as needed)
+    dragHandle.style.cursor = 'move';
+    dragHandle.style.background = '#eee';
+    dragHandle.style.padding = '4px';
+    dragHandle.style.textAlign = 'center';
+    dragHandle.style.borderBottom = '1px solid #ccc';
+
+    // Insert drag handle at the top of the toolbar
+    toolbar.insertBefore(dragHandle, toolbar.firstChild);
+
+    let isDragging = false;
+    let offsetX = 0, offsetY = 0;
+
+    dragHandle.addEventListener('mousedown', function(e) {
+      e.preventDefault(); // Prevent text selection
+      isDragging = true;
+      offsetX = e.clientX - toolbar.offsetLeft;
+      offsetY = e.clientY - toolbar.offsetTop;
+
+      document.addEventListener('mousemove', mouseMoveHandler);
+      document.addEventListener('mouseup', mouseUpHandler);
+    });
+
+    function mouseMoveHandler(e) {
+      if (!isDragging) return;
+      toolbar.style.left = (e.clientX - offsetX) + 'px';
+      toolbar.style.top = (e.clientY - offsetY) + 'px';
+    }
+
+    function mouseUpHandler() {
+      isDragging = false;
+      document.removeEventListener('mousemove', mouseMoveHandler);
+      document.removeEventListener('mouseup', mouseUpHandler);
+    }
+  }
+
   // ================== APPLY A STYLE ==================
   function applyStyle(cssProperty, value) {
     if (!jocarsaDarkgoldenrodCurrentElement) return;
@@ -152,34 +204,31 @@
   }
 
   // ================== GLOBAL EVENTS ==================
-function attachGlobalEvents() {
-  // 1) When focusing on a contenteditable, set that as current
-  document.addEventListener(
-    'focusin',
-    (e) => {
+  function attachGlobalEvents() {
+    // 1) When focusing on a contenteditable, set that as current
+    document.addEventListener('focusin', (e) => {
       if (e.target && e.target.isContentEditable) {
         jocarsaDarkgoldenrodCurrentElement = e.target;
         positionToolbar(jocarsaDarkgoldenrodCurrentElement, jocarsaDarkgoldenrodToolbar);
         showToolbar(jocarsaDarkgoldenrodToolbar);
       }
-    },
-    true
-  );
+    }, true);
 
-  // 2) Hide toolbar if user clicks outside both the toolbar and the contenteditable
-  document.addEventListener('click', (e) => {
-    // Use the composedPath to correctly detect if the click was inside our elements
-    const path = e.composedPath();
-    if (
-      jocarsaDarkgoldenrodCurrentElement &&
-      !path.includes(jocarsaDarkgoldenrodCurrentElement) &&
-      !path.includes(jocarsaDarkgoldenrodToolbar)
-    ) {
-      hideToolbar(jocarsaDarkgoldenrodToolbar);
-      jocarsaDarkgoldenrodCurrentElement = null;
-    }
-  });
-}
+    // 2) Hide toolbar if user clicks outside both the toolbar and the contenteditable
+    document.addEventListener('click', (e) => {
+      // Use the composedPath to correctly detect if the click was inside our elements
+      const path = e.composedPath();
+      if (
+        jocarsaDarkgoldenrodCurrentElement &&
+        !path.includes(jocarsaDarkgoldenrodCurrentElement) &&
+        !path.includes(jocarsaDarkgoldenrodToolbar)
+      ) {
+        hideToolbar(jocarsaDarkgoldenrodToolbar);
+        jocarsaDarkgoldenrodCurrentElement = null;
+      }
+    });
+  }
+
   // ================== WINDOW SCROLL/RESIZE EVENTS ==================
   function attachWindowEvents() {
     window.addEventListener('scroll', () => {

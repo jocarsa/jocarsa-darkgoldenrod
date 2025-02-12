@@ -16,7 +16,7 @@
 
 /* Accordion items */
 .jocarsa-darkgoldenrod-accordion-item {
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
   border-bottom: 1px solid #ddd;
 }
 
@@ -46,11 +46,12 @@
 .jocarsa-darkgoldenrod-accordion-content {
   display: none;
   padding: 0.3rem 0;
+  column-count: 2;
 }
 
 .jocarsa-darkgoldenrod-accordion-content label {
   display: block;
-  margin-bottom: 0.25rem;
+  /*margin-bottom: 0.25rem;*/
   font-size: 0.8rem;
   color: #333;
 }
@@ -63,5 +64,8 @@
   width: 100%;
   box-sizing: border-box;
   font-size: 0.8rem;
+  padding: 5px;
+    border-radius: 7px;
+    border: 1px solid lightgrey;
 }
 
