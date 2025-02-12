@@ -152,30 +152,34 @@
   }
 
   // ================== GLOBAL EVENTS ==================
-  function attachGlobalEvents() {
-    // 1) When focusing on a contenteditable, set that as current
-    document.addEventListener('focusin', (e) => {
+function attachGlobalEvents() {
+  // 1) When focusing on a contenteditable, set that as current
+  document.addEventListener(
+    'focusin',
+    (e) => {
       if (e.target && e.target.isContentEditable) {
         jocarsaDarkgoldenrodCurrentElement = e.target;
         positionToolbar(jocarsaDarkgoldenrodCurrentElement, jocarsaDarkgoldenrodToolbar);
         showToolbar(jocarsaDarkgoldenrodToolbar);
       }
-    }, true);
+    },
+    true
+  );
 
-    // 2) Hide toolbar if user clicks outside both the toolbar and the contenteditable
-    document.addEventListener('click', (e) => {
-      if (!jocarsaDarkgoldenrodCurrentElement) return;
-      if (
-        !jocarsaDarkgoldenrodCurrentElement.contains(e.target) &&
-        !jocarsaDarkgoldenrodToolbar.contains(e.target)
-      ) {
-        // Click is outside the current contenteditable AND outside toolbar
-        hideToolbar(jocarsaDarkgoldenrodToolbar);
-        jocarsaDarkgoldenrodCurrentElement = null;
-      }
-    });
-  }
-
+  // 2) Hide toolbar if user clicks outside both the toolbar and the contenteditable
+  document.addEventListener('click', (e) => {
+    // Use the composedPath to correctly detect if the click was inside our elements
+    const path = e.composedPath();
+    if (
+      jocarsaDarkgoldenrodCurrentElement &&
+      !path.includes(jocarsaDarkgoldenrodCurrentElement) &&
+      !path.includes(jocarsaDarkgoldenrodToolbar)
+    ) {
+      hideToolbar(jocarsaDarkgoldenrodToolbar);
+      jocarsaDarkgoldenrodCurrentElement = null;
+    }
+  });
+}
   // ================== WINDOW SCROLL/RESIZE EVENTS ==================
   function attachWindowEvents() {
     window.addEventListener('scroll', () => {
