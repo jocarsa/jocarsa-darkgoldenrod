@@ -1,0 +1,289 @@
+{
+  "sections": [
+    {
+      "title": "Text",
+      "properties": [
+        {
+          "property": "color",
+          "label": "Text Color",
+          "type": "color"
+        },
+        {
+          "property": "fontFamily",
+          "label": "Font Family",
+          "type": "select",
+          "options": [
+            { "label": "(default)",      "value": "" },
+            { "label": "Arial",         "value": "Arial, sans-serif" },
+            { "label": "Georgia",       "value": "Georgia, serif" },
+            { "label": "Tahoma",        "value": "Tahoma, sans-serif" },
+            { "label": "Times New Roman","value": "Times New Roman, serif" },
+            { "label": "Courier New",   "value": "Courier New, monospace" },
+            { "label": "Verdana",       "value": "Verdana, sans-serif" }
+          ]
+        },
+        {
+          "property": "fontSize",
+          "label": "Font Size (px)",
+          "type": "number",
+          "min": 8,
+          "max": 72,
+          "step": 1,
+          "default": 16
+        },
+        {
+          "property": "fontWeight",
+          "label": "Font Weight",
+          "type": "select",
+          "options": [
+            { "label": "(default)", "value": "" },
+            { "label": "normal",   "value": "normal" },
+            { "label": "bold",     "value": "bold" },
+            { "label": "bolder",   "value": "bolder" },
+            { "label": "lighter",  "value": "lighter" },
+            { "label": "100",      "value": "100" },
+            { "label": "200",      "value": "200" },
+            { "label": "300",      "value": "300" },
+            { "label": "400",      "value": "400" },
+            { "label": "500",      "value": "500" },
+            { "label": "600",      "value": "600" },
+            { "label": "700",      "value": "700" },
+            { "label": "800",      "value": "800" },
+            { "label": "900",      "value": "900" }
+          ]
+        },
+        {
+          "property": "fontStyle",
+          "label": "Font Style",
+          "type": "select",
+          "options": [
+            { "label": "(default)", "value": "" },
+            { "label": "normal",    "value": "normal" },
+            { "label": "italic",    "value": "italic" },
+            { "label": "oblique",   "value": "oblique" }
+          ]
+        },
+        {
+          "property": "lineHeight",
+          "label": "Line Height (px)",
+          "type": "number",
+          "min": 1,
+          "max": 100,
+          "step": 1,
+          "default": ""
+        },
+        {
+          "property": "textDecoration",
+          "label": "Text Decoration",
+          "type": "select",
+          "options": [
+            { "label": "none",         "value": "" },
+            { "label": "underline",    "value": "underline" },
+            { "label": "overline",     "value": "overline" },
+            { "label": "line-through", "value": "line-through" }
+          ]
+        },
+        {
+          "property": "textTransform",
+          "label": "Text Transform",
+          "type": "select",
+          "options": [
+            { "label": "none",       "value": "" },
+            { "label": "uppercase",  "value": "uppercase" },
+            { "label": "lowercase",  "value": "lowercase" },
+            { "label": "capitalize", "value": "capitalize" }
+          ]
+        },
+        {
+          "property": "textAlign",
+          "label": "Text Align",
+          "type": "select",
+          "options": [
+            { "label": "(default)", "value": "" },
+            { "label": "left",     "value": "left" },
+            { "label": "center",   "value": "center" },
+            { "label": "right",    "value": "right" },
+            { "label": "justify",  "value": "justify" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Background & Border",
+      "properties": [
+        {
+          "property": "backgroundColor",
+          "label": "Background Color",
+          "type": "color"
+        },
+        {
+          "property": "backgroundImage",
+          "label": "Background Image (URL)",
+          "type": "text"
+        },
+        {
+          "property": "borderStyle",
+          "label": "Border Style",
+          "type": "select",
+          "options": [
+            { "label": "none",   "value": "" },
+            { "label": "solid",  "value": "solid" },
+            { "label": "dashed", "value": "dashed" },
+            { "label": "dotted", "value": "dotted" },
+            { "label": "double", "value": "double" },
+            { "label": "groove", "value": "groove" },
+            { "label": "ridge",  "value": "ridge" },
+            { "label": "inset",  "value": "inset" },
+            { "label": "outset", "value": "outset" }
+          ]
+        },
+        {
+          "property": "borderWidth",
+          "label": "Border Width (px)",
+          "type": "number",
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "default": 1
+        },
+        {
+          "property": "borderColor",
+          "label": "Border Color",
+          "type": "color"
+        }
+      ]
+    },
+    {
+      "title": "Spacing (Margin & Padding)",
+      "properties": [
+        {
+          "property": "marginTop",
+          "label": "Margin Top (px)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "marginRight",
+          "label": "Margin Right (px)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "marginBottom",
+          "label": "Margin Bottom (px)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "marginLeft",
+          "label": "Margin Left (px)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "paddingTop",
+          "label": "Padding Top (px)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "paddingRight",
+          "label": "Padding Right (px)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "paddingBottom",
+          "label": "Padding Bottom (px)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "paddingLeft",
+          "label": "Padding Left (px)",
+          "type": "number",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "title": "Layout",
+      "properties": [
+        {
+          "property": "display",
+          "label": "Display",
+          "type": "select",
+          "options": [
+            { "label": "(default)", "value": "" },
+            { "label": "block",     "value": "block" },
+            { "label": "inline",    "value": "inline" },
+            { "label": "inline-block","value": "inline-block" },
+            { "label": "flex",      "value": "flex" },
+            { "label": "grid",      "value": "grid" },
+            { "label": "none",      "value": "none" }
+          ]
+        },
+        {
+          "property": "position",
+          "label": "Position",
+          "type": "select",
+          "options": [
+            { "label": "(default)", "value": "" },
+            { "label": "static",    "value": "static" },
+            { "label": "relative",  "value": "relative" },
+            { "label": "absolute",  "value": "absolute" },
+            { "label": "fixed",     "value": "fixed" },
+            { "label": "sticky",    "value": "sticky" }
+          ]
+        },
+        {
+          "property": "top",
+          "label": "Top (px)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "right",
+          "label": "Right (px)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "bottom",
+          "label": "Bottom (px)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "left",
+          "label": "Left (px)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "float",
+          "label": "Float",
+          "type": "select",
+          "options": [
+            { "label": "none", "value": "" },
+            { "label": "left", "value": "left" },
+            { "label": "right","value": "right" }
+          ]
+        },
+        {
+          "property": "overflow",
+          "label": "Overflow",
+          "type": "select",
+          "options": [
+            { "label": "(default)", "value": "" },
+            { "label": "visible",   "value": "visible" },
+            { "label": "hidden",    "value": "hidden" },
+            { "label": "scroll",    "value": "scroll" },
+            { "label": "auto",      "value": "auto" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
