@@ -13,13 +13,13 @@
           "label": "Font Family",
           "type": "select",
           "options": [
-            { "label": "(default)",      "value": "" },
-            { "label": "Arial",         "value": "Arial, sans-serif" },
-            { "label": "Georgia",       "value": "Georgia, serif" },
-            { "label": "Tahoma",        "value": "Tahoma, sans-serif" },
-            { "label": "Times New Roman","value": "Times New Roman, serif" },
-            { "label": "Courier New",   "value": "Courier New, monospace" },
-            { "label": "Verdana",       "value": "Verdana, sans-serif" }
+            { "label": "(default)", "value": "" },
+            { "label": "Arial", "value": "Arial, sans-serif" },
+            { "label": "Georgia", "value": "Georgia, serif" },
+            { "label": "Tahoma", "value": "Tahoma, sans-serif" },
+            { "label": "Times New Roman", "value": "Times New Roman, serif" },
+            { "label": "Courier New", "value": "Courier New, monospace" },
+            { "label": "Verdana", "value": "Verdana, sans-serif" }
           ]
         },
         {
@@ -37,19 +37,19 @@
           "type": "select",
           "options": [
             { "label": "(default)", "value": "" },
-            { "label": "normal",   "value": "normal" },
-            { "label": "bold",     "value": "bold" },
-            { "label": "bolder",   "value": "bolder" },
-            { "label": "lighter",  "value": "lighter" },
-            { "label": "100",      "value": "100" },
-            { "label": "200",      "value": "200" },
-            { "label": "300",      "value": "300" },
-            { "label": "400",      "value": "400" },
-            { "label": "500",      "value": "500" },
-            { "label": "600",      "value": "600" },
-            { "label": "700",      "value": "700" },
-            { "label": "800",      "value": "800" },
-            { "label": "900",      "value": "900" }
+            { "label": "normal", "value": "normal" },
+            { "label": "bold", "value": "bold" },
+            { "label": "bolder", "value": "bolder" },
+            { "label": "lighter", "value": "lighter" },
+            { "label": "100", "value": "100" },
+            { "label": "200", "value": "200" },
+            { "label": "300", "value": "300" },
+            { "label": "400", "value": "400" },
+            { "label": "500", "value": "500" },
+            { "label": "600", "value": "600" },
+            { "label": "700", "value": "700" },
+            { "label": "800", "value": "800" },
+            { "label": "900", "value": "900" }
           ]
         },
         {
@@ -58,9 +58,9 @@
           "type": "select",
           "options": [
             { "label": "(default)", "value": "" },
-            { "label": "normal",    "value": "normal" },
-            { "label": "italic",    "value": "italic" },
-            { "label": "oblique",   "value": "oblique" }
+            { "label": "normal", "value": "normal" },
+            { "label": "italic", "value": "italic" },
+            { "label": "oblique", "value": "oblique" }
           ]
         },
         {
@@ -77,9 +77,9 @@
           "label": "Text Decoration",
           "type": "select",
           "options": [
-            { "label": "none",         "value": "" },
-            { "label": "underline",    "value": "underline" },
-            { "label": "overline",     "value": "overline" },
+            { "label": "none", "value": "" },
+            { "label": "underline", "value": "underline" },
+            { "label": "overline", "value": "overline" },
             { "label": "line-through", "value": "line-through" }
           ]
         },
@@ -88,9 +88,9 @@
           "label": "Text Transform",
           "type": "select",
           "options": [
-            { "label": "none",       "value": "" },
-            { "label": "uppercase",  "value": "uppercase" },
-            { "label": "lowercase",  "value": "lowercase" },
+            { "label": "none", "value": "" },
+            { "label": "uppercase", "value": "uppercase" },
+            { "label": "lowercase", "value": "lowercase" },
             { "label": "capitalize", "value": "capitalize" }
           ]
         },
@@ -100,10 +100,10 @@
           "type": "select",
           "options": [
             { "label": "(default)", "value": "" },
-            { "label": "left",     "value": "left" },
-            { "label": "center",   "value": "center" },
-            { "label": "right",    "value": "right" },
-            { "label": "justify",  "value": "justify" }
+            { "label": "left", "value": "left" },
+            { "label": "center", "value": "center" },
+            { "label": "right", "value": "right" },
+            { "label": "justify", "value": "justify" }
           ]
         }
       ]
@@ -126,14 +126,14 @@
           "label": "Border Style",
           "type": "select",
           "options": [
-            { "label": "none",   "value": "" },
-            { "label": "solid",  "value": "solid" },
+            { "label": "none", "value": "" },
+            { "label": "solid", "value": "solid" },
             { "label": "dashed", "value": "dashed" },
             { "label": "dotted", "value": "dotted" },
             { "label": "double", "value": "double" },
             { "label": "groove", "value": "groove" },
-            { "label": "ridge",  "value": "ridge" },
-            { "label": "inset",  "value": "inset" },
+            { "label": "ridge", "value": "ridge" },
+            { "label": "inset", "value": "inset" },
             { "label": "outset", "value": "outset" }
           ]
         },
@@ -215,12 +215,12 @@
           "type": "select",
           "options": [
             { "label": "(default)", "value": "" },
-            { "label": "block",     "value": "block" },
-            { "label": "inline",    "value": "inline" },
-            { "label": "inline-block","value": "inline-block" },
-            { "label": "flex",      "value": "flex" },
-            { "label": "grid",      "value": "grid" },
-            { "label": "none",      "value": "none" }
+            { "label": "block", "value": "block" },
+            { "label": "inline", "value": "inline" },
+            { "label": "inline-block", "value": "inline-block" },
+            { "label": "flex", "value": "flex" },
+            { "label": "grid", "value": "grid" },
+            { "label": "none", "value": "none" }
           ]
         },
         {
@@ -229,11 +229,11 @@
           "type": "select",
           "options": [
             { "label": "(default)", "value": "" },
-            { "label": "static",    "value": "static" },
-            { "label": "relative",  "value": "relative" },
-            { "label": "absolute",  "value": "absolute" },
-            { "label": "fixed",     "value": "fixed" },
-            { "label": "sticky",    "value": "sticky" }
+            { "label": "static", "value": "static" },
+            { "label": "relative", "value": "relative" },
+            { "label": "absolute", "value": "absolute" },
+            { "label": "fixed", "value": "fixed" },
+            { "label": "sticky", "value": "sticky" }
           ]
         },
         {
@@ -267,7 +267,7 @@
           "options": [
             { "label": "none", "value": "" },
             { "label": "left", "value": "left" },
-            { "label": "right","value": "right" }
+            { "label": "right", "value": "right" }
           ]
         },
         {
@@ -276,10 +276,685 @@
           "type": "select",
           "options": [
             { "label": "(default)", "value": "" },
-            { "label": "visible",   "value": "visible" },
-            { "label": "hidden",    "value": "hidden" },
-            { "label": "scroll",    "value": "scroll" },
-            { "label": "auto",      "value": "auto" }
+            { "label": "visible", "value": "visible" },
+            { "label": "hidden", "value": "hidden" },
+            { "label": "scroll", "value": "scroll" },
+            { "label": "auto", "value": "auto" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Typography & Additional Text",
+      "properties": [
+        {
+          "property": "letterSpacing",
+          "label": "Letter Spacing (px)",
+          "type": "number",
+          "min": 0,
+          "max": 100,
+          "step": 0.5,
+          "default": ""
+        },
+        {
+          "property": "wordSpacing",
+          "label": "Word Spacing (px)",
+          "type": "number",
+          "min": 0,
+          "max": 100,
+          "step": 0.5,
+          "default": ""
+        },
+        {
+          "property": "textIndent",
+          "label": "Text Indent (px)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "whiteSpace",
+          "label": "White Space",
+          "type": "select",
+          "options": [
+            { "label": "normal", "value": "normal" },
+            { "label": "nowrap", "value": "nowrap" },
+            { "label": "pre", "value": "pre" },
+            { "label": "pre-wrap", "value": "pre-wrap" },
+            { "label": "pre-line", "value": "pre-line" },
+            { "label": "break-spaces", "value": "break-spaces" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "verticalAlign",
+          "label": "Vertical Align",
+          "type": "select",
+          "options": [
+            { "label": "baseline", "value": "baseline" },
+            { "label": "sub", "value": "sub" },
+            { "label": "super", "value": "super" },
+            { "label": "top", "value": "top" },
+            { "label": "text-top", "value": "text-top" },
+            { "label": "middle", "value": "middle" },
+            { "label": "bottom", "value": "bottom" },
+            { "label": "text-bottom", "value": "text-bottom" },
+            { "label": "(default)", "value": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sizing",
+      "properties": [
+        {
+          "property": "width",
+          "label": "Width",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "height",
+          "label": "Height",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "minWidth",
+          "label": "Min Width",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "maxWidth",
+          "label": "Max Width",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "minHeight",
+          "label": "Min Height",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "maxHeight",
+          "label": "Max Height",
+          "type": "text",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "title": "Border & Outline",
+      "properties": [
+        {
+          "property": "borderRadius",
+          "label": "Border Radius (px)",
+          "type": "number",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": ""
+        },
+        {
+          "property": "outlineStyle",
+          "label": "Outline Style",
+          "type": "select",
+          "options": [
+            { "label": "none", "value": "none" },
+            { "label": "solid", "value": "solid" },
+            { "label": "dashed", "value": "dashed" },
+            { "label": "dotted", "value": "dotted" },
+            { "label": "double", "value": "double" },
+            { "label": "groove", "value": "groove" },
+            { "label": "ridge", "value": "ridge" },
+            { "label": "inset", "value": "inset" },
+            { "label": "outset", "value": "outset" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "outlineWidth",
+          "label": "Outline Width (px)",
+          "type": "number",
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "default": ""
+        },
+        {
+          "property": "outlineColor",
+          "label": "Outline Color",
+          "type": "color"
+        }
+      ]
+    },
+    {
+      "title": "Box Shadow & Opacity",
+      "properties": [
+        {
+          "property": "boxShadow",
+          "label": "Box Shadow",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "opacity",
+          "label": "Opacity",
+          "type": "number",
+          "min": 0,
+          "max": 1,
+          "step": 0.01,
+          "default": 1
+        }
+      ]
+    },
+    {
+      "title": "Transform",
+      "properties": [
+        {
+          "property": "transform",
+          "label": "Transform",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "transformOrigin",
+          "label": "Transform Origin",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "perspective",
+          "label": "Perspective (px)",
+          "type": "number",
+          "min": 0,
+          "default": ""
+        },
+        {
+          "property": "perspectiveOrigin",
+          "label": "Perspective Origin",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "backfaceVisibility",
+          "label": "Backface Visibility",
+          "type": "select",
+          "options": [
+            { "label": "visible", "value": "visible" },
+            { "label": "hidden", "value": "hidden" },
+            { "label": "(default)", "value": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transition & Animation",
+      "properties": [
+        {
+          "property": "transition",
+          "label": "Transition",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "transitionDelay",
+          "label": "Transition Delay",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "transitionDuration",
+          "label": "Transition Duration",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "transitionProperty",
+          "label": "Transition Property",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "transitionTimingFunction",
+          "label": "Transition Timing Function",
+          "type": "select",
+          "options": [
+            { "label": "ease", "value": "ease" },
+            { "label": "linear", "value": "linear" },
+            { "label": "ease-in", "value": "ease-in" },
+            { "label": "ease-out", "value": "ease-out" },
+            { "label": "ease-in-out", "value": "ease-in-out" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "animationName",
+          "label": "Animation Name",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "animationDuration",
+          "label": "Animation Duration",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "animationTimingFunction",
+          "label": "Animation Timing Function",
+          "type": "select",
+          "options": [
+            { "label": "ease", "value": "ease" },
+            { "label": "linear", "value": "linear" },
+            { "label": "ease-in", "value": "ease-in" },
+            { "label": "ease-out", "value": "ease-out" },
+            { "label": "ease-in-out", "value": "ease-in-out" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "animationDelay",
+          "label": "Animation Delay",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "animationIterationCount",
+          "label": "Animation Iteration Count",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "animationDirection",
+          "label": "Animation Direction",
+          "type": "select",
+          "options": [
+            { "label": "normal", "value": "normal" },
+            { "label": "reverse", "value": "reverse" },
+            { "label": "alternate", "value": "alternate" },
+            { "label": "alternate-reverse", "value": "alternate-reverse" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "animationFillMode",
+          "label": "Animation Fill Mode",
+          "type": "select",
+          "options": [
+            { "label": "none", "value": "none" },
+            { "label": "forwards", "value": "forwards" },
+            { "label": "backwards", "value": "backwards" },
+            { "label": "both", "value": "both" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "animationPlayState",
+          "label": "Animation Play State",
+          "type": "select",
+          "options": [
+            { "label": "running", "value": "running" },
+            { "label": "paused", "value": "paused" },
+            { "label": "(default)", "value": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Flexbox",
+      "properties": [
+        {
+          "property": "flexDirection",
+          "label": "Flex Direction",
+          "type": "select",
+          "options": [
+            { "label": "row", "value": "row" },
+            { "label": "row-reverse", "value": "row-reverse" },
+            { "label": "column", "value": "column" },
+            { "label": "column-reverse", "value": "column-reverse" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "flexWrap",
+          "label": "Flex Wrap",
+          "type": "select",
+          "options": [
+            { "label": "nowrap", "value": "nowrap" },
+            { "label": "wrap", "value": "wrap" },
+            { "label": "wrap-reverse", "value": "wrap-reverse" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "justifyContent",
+          "label": "Justify Content",
+          "type": "select",
+          "options": [
+            { "label": "flex-start", "value": "flex-start" },
+            { "label": "flex-end", "value": "flex-end" },
+            { "label": "center", "value": "center" },
+            { "label": "space-between", "value": "space-between" },
+            { "label": "space-around", "value": "space-around" },
+            { "label": "space-evenly", "value": "space-evenly" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "alignItems",
+          "label": "Align Items",
+          "type": "select",
+          "options": [
+            { "label": "stretch", "value": "stretch" },
+            { "label": "flex-start", "value": "flex-start" },
+            { "label": "flex-end", "value": "flex-end" },
+            { "label": "center", "value": "center" },
+            { "label": "baseline", "value": "baseline" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "alignContent",
+          "label": "Align Content",
+          "type": "select",
+          "options": [
+            { "label": "stretch", "value": "stretch" },
+            { "label": "flex-start", "value": "flex-start" },
+            { "label": "flex-end", "value": "flex-end" },
+            { "label": "center", "value": "center" },
+            { "label": "space-between", "value": "space-between" },
+            { "label": "space-around", "value": "space-around" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "flexGrow",
+          "label": "Flex Grow",
+          "type": "number",
+          "min": 0,
+          "default": 0
+        },
+        {
+          "property": "flexShrink",
+          "label": "Flex Shrink",
+          "type": "number",
+          "min": 0,
+          "default": 1
+        },
+        {
+          "property": "flexBasis",
+          "label": "Flex Basis",
+          "type": "text",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "title": "Grid",
+      "properties": [
+        {
+          "property": "gridTemplateColumns",
+          "label": "Grid Template Columns",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "gridTemplateRows",
+          "label": "Grid Template Rows",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "gridColumnGap",
+          "label": "Grid Column Gap",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "gridRowGap",
+          "label": "Grid Row Gap",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "gridTemplateAreas",
+          "label": "Grid Template Areas",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "gridAutoFlow",
+          "label": "Grid Auto Flow",
+          "type": "select",
+          "options": [
+            { "label": "row", "value": "row" },
+            { "label": "column", "value": "column" },
+            { "label": "dense", "value": "dense" },
+            { "label": "row dense", "value": "row dense" },
+            { "label": "column dense", "value": "column dense" },
+            { "label": "(default)", "value": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Filters & Effects",
+      "properties": [
+        {
+          "property": "filter",
+          "label": "Filter",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "backdropFilter",
+          "label": "Backdrop Filter",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "mixBlendMode",
+          "label": "Mix Blend Mode",
+          "type": "select",
+          "options": [
+            { "label": "normal", "value": "normal" },
+            { "label": "multiply", "value": "multiply" },
+            { "label": "screen", "value": "screen" },
+            { "label": "overlay", "value": "overlay" },
+            { "label": "darken", "value": "darken" },
+            { "label": "lighten", "value": "lighten" },
+            { "label": "color-dodge", "value": "color-dodge" },
+            { "label": "color-burn", "value": "color-burn" },
+            { "label": "hard-light", "value": "hard-light" },
+            { "label": "soft-light", "value": "soft-light" },
+            { "label": "difference", "value": "difference" },
+            { "label": "exclusion", "value": "exclusion" },
+            { "label": "hue", "value": "hue" },
+            { "label": "saturation", "value": "saturation" },
+            { "label": "color", "value": "color" },
+            { "label": "luminosity", "value": "luminosity" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "isolation",
+          "label": "Isolation",
+          "type": "select",
+          "options": [
+            { "label": "auto", "value": "auto" },
+            { "label": "isolate", "value": "isolate" },
+            { "label": "(default)", "value": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Miscellaneous",
+      "properties": [
+        {
+          "property": "cursor",
+          "label": "Cursor",
+          "type": "select",
+          "options": [
+            { "label": "auto", "value": "auto" },
+            { "label": "default", "value": "default" },
+            { "label": "pointer", "value": "pointer" },
+            { "label": "wait", "value": "wait" },
+            { "label": "text", "value": "text" },
+            { "label": "move", "value": "move" },
+            { "label": "help", "value": "help" },
+            { "label": "not-allowed", "value": "not-allowed" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "userSelect",
+          "label": "User Select",
+          "type": "select",
+          "options": [
+            { "label": "auto", "value": "auto" },
+            { "label": "text", "value": "text" },
+            { "label": "none", "value": "none" },
+            { "label": "all", "value": "all" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "visibility",
+          "label": "Visibility",
+          "type": "select",
+          "options": [
+            { "label": "visible", "value": "visible" },
+            { "label": "hidden", "value": "hidden" },
+            { "label": "collapse", "value": "collapse" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "zIndex",
+          "label": "z-index",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "property": "overflowX",
+          "label": "Overflow X",
+          "type": "select",
+          "options": [
+            { "label": "visible", "value": "visible" },
+            { "label": "hidden", "value": "hidden" },
+            { "label": "scroll", "value": "scroll" },
+            { "label": "auto", "value": "auto" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "overflowY",
+          "label": "Overflow Y",
+          "type": "select",
+          "options": [
+            { "label": "visible", "value": "visible" },
+            { "label": "hidden", "value": "hidden" },
+            { "label": "scroll", "value": "scroll" },
+            { "label": "auto", "value": "auto" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "wordBreak",
+          "label": "Word Break",
+          "type": "select",
+          "options": [
+            { "label": "normal", "value": "normal" },
+            { "label": "break-all", "value": "break-all" },
+            { "label": "keep-all", "value": "keep-all" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "textOverflow",
+          "label": "Text Overflow",
+          "type": "select",
+          "options": [
+            { "label": "clip", "value": "clip" },
+            { "label": "ellipsis", "value": "ellipsis" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "resize",
+          "label": "Resize",
+          "type": "select",
+          "options": [
+            { "label": "none", "value": "none" },
+            { "label": "both", "value": "both" },
+            { "label": "horizontal", "value": "horizontal" },
+            { "label": "vertical", "value": "vertical" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "direction",
+          "label": "Direction",
+          "type": "select",
+          "options": [
+            { "label": "ltr", "value": "ltr" },
+            { "label": "rtl", "value": "rtl" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "writingMode",
+          "label": "Writing Mode",
+          "type": "select",
+          "options": [
+            { "label": "horizontal-tb", "value": "horizontal-tb" },
+            { "label": "vertical-rl", "value": "vertical-rl" },
+            { "label": "vertical-lr", "value": "vertical-lr" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "clip",
+          "label": "Clip",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "clipPath",
+          "label": "Clip Path",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "objectFit",
+          "label": "Object Fit",
+          "type": "select",
+          "options": [
+            { "label": "fill", "value": "fill" },
+            { "label": "contain", "value": "contain" },
+            { "label": "cover", "value": "cover" },
+            { "label": "none", "value": "none" },
+            { "label": "scale-down", "value": "scale-down" },
+            { "label": "(default)", "value": "" }
+          ]
+        },
+        {
+          "property": "objectPosition",
+          "label": "Object Position",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "property": "boxSizing",
+          "label": "Box Sizing",
+          "type": "select",
+          "options": [
+            { "label": "content-box", "value": "content-box" },
+            { "label": "border-box", "value": "border-box" },
+            { "label": "(default)", "value": "" }
           ]
         }
       ]
