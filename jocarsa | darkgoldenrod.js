@@ -8,7 +8,7 @@
   // Fetch JSON and init
   async function init() {
     try {
-      const response = await fetch('jocarsa-darkgoldenrod-props.json');
+      const response = await fetch('https://jocarsa.github.io/jocarsa-darkgoldenrod/jocarsa-darkgoldenrod-props.json');
       propsData = await response.json();
       // Once JSON is loaded, build the toolbar
       jocarsaDarkgoldenrodToolbar = createToolbar(propsData);
